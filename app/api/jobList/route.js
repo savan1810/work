@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 const cheerio = require('cheerio');
-const axios = require('axios');
 
 export async function GET(request) {
     try {
