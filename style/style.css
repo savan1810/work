@@ -1,0 +1,23 @@
+.provience_trans:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #7752FE;
+    width: 0;
+    height: 2px;
+    transition:  0.7s;
+}
+
+.provience_trans:hover:after{
+    width:100%
+}
+
+/* .buttonHover{
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #9c27b0 , #E91E63);
+    border-image-slice: 1;
+    
+} */
+
+
