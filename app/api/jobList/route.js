@@ -8,10 +8,10 @@ export async function GET(request) {
 
         const url = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Python&location=US&trk=public_jobs_jobs-search-bar_search-submit&pageNum=0&start=5';
 
-        const response = await axios.get(url);
+        const response = await fetch(url);
 
         if (response.status === 200) {
-            const html = response.data;
+            const html = response.json();
             const $ = cheerio.load(html);
             const jobListings = [];
 
